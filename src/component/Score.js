@@ -13,6 +13,7 @@ const Score = ()=>{
         <div className="score">
             <h1>สรุปผลคะแนน</h1>
             <h2>{score} / {QuestionData.length}</h2>
+            <button onClick={restartApp}>ทำแบบทดสอบอีกครั้ง</button>
         </div>
     )
 }

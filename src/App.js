@@ -1,5 +1,5 @@
 import {createContext,useState} from "react";
-import Menu from "./component/Menu"
+import Menu from "./component/Menu";
 import Quiz from "./component/Quiz";
 import Score from "./component/Score";
 
@@ -14,9 +14,9 @@ function App() {
   <DataContext.Provider value={{appState,setAppState,score,setScore}}>
     <div className="App">
         <h1>Web Development Quiz</h1>
-        {appState === "menu" && <Menu/>} {/* พิมพ์ตรงนี้จะ import ให้อัตโนมัตื */}
-        {appState === "quiz" && <Quiz/>} {/* พิมพ์ตรงนี้จะ import ให้อัตโนมัตื */}
-        {appState === "score" && <Score/>} {/* พิมพ์ตรงนี้จะ import ให้อัตโนมัตื */}
+        {appState === "menu" && <Menu/>} 
+        {appState === "quiz" && <Quiz/>} 
+        {appState === "score" && <Score/>}
     </div>
   </DataContext.Provider>
   );
